@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<service-builder package-path="com.opensource.techblog.springmvc.portlet1">
+	<author>LegalWiz</author>
+	<namespace>legalwiz</namespace>
+
+	<entity name="Product" local-service="true" remote-service="true">
+
+		<!-- PK fields -->
+
+		<column name="productId" type="long" primary="true" />
+
+		<!-- Group instance -->
+
+		<column name="groupId" type="long" />
+
+		<!-- Audit fields -->
+
+		<column name="companyId" type="long" />
+		<column name="userId" type="long" />
+		<column name="productName" type="String" />
+
+		<!-- Finder methods -->
+
+		<finder name="GroupId" return-type="Collection">
+			<finder-column name="groupId" />
+		</finder>
+		<finder name="CompanyId" return-type="Collection">
+			<finder-column name="companyId" />
+		</finder>
+		<finder name="ProductDetails" return-type="Product">
+			<finder-column name="productId" />
+		</finder>
+		
+	</entity>
+	
+	
+</service-builder>
+
+	

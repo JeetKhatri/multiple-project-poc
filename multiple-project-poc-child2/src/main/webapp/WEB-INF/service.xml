@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<service-builder package-path="com.opensource.techblog.springmvc.portlet1">
+	<author>LegalWiz</author>
+	<namespace>legalwiz</namespace>
+
+
+	
+	<entity name="UserDetails" local-service="true" remote-service="true">
+
+		<!-- PK fields -->
+
+		<column name="userId" type="long" primary="true" id-type="increment"/>
+		<column name="userName" type="String" />
+		<column name="userEmail" type="String" />
+
+		<finder name="UserDetails" return-type="UserDetails">
+			<finder-column name="userId" />
+		</finder>
+		
+	</entity>
+	
+	
+</service-builder>
+
+	

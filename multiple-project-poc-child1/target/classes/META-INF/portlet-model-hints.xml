@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="com.opensource.techblog.springmvc.portlet1.model.Product">
+		<field name="productId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="userId" type="long" />
+		<field name="productName" type="String" />
+	</model>
+</model-hints>
