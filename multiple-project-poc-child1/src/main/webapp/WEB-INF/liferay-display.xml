@@ -4,5 +4,6 @@
 <display>
 	<category name="category.sample">
 		<portlet id="multiple-project-poc-child1" />
+		<portlet id="product"></portlet>
 	</category>
 </display>

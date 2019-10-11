@@ -9,7 +9,7 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<artifactId>multiple-project-poc-child1</artifactId>
-	<packaging>jar</packaging>
+	<packaging>war</packaging>
 	<name>multiple-project-poc-child1 Portlet</name>
 	<properties>
 		<liferay.app.server.deploy.dir>D:\Liferay\liferay-portal-6.2-ce-ga3\tomcat-7.0.42\webapps
@@ -47,6 +47,7 @@
 					</appServerPortalDir>
 					<liferayVersion>${liferay.version}</liferayVersion>
 					<pluginType>portlet</pluginType>
+					<pluginName>multiple-project-poc-child1-portlet</pluginName>
 				</configuration>
 			</plugin>
 			<plugin>
